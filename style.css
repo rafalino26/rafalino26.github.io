@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*NAVBAR*/
+.navbar {
+  color: #fff;
+  padding: 10px;
+  position: fixed; 
+  top: 30px; 
+  left: 0; 
+  width: 100%; 
+  font-family: 'Work Sans', sans-serif; 
+}
+
+.navbar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative; 
+  text-align: center; 
+}
+
+.navbar nav ul li {
+  display: inline-block; 
+  margin-right: 10px;
+  position: relative; 
+}
+
+.navbar nav ul li a {
+  color: inherit; 
+  text-decoration: none;
+  transition: color 0.3s ease; 
+}
+
+.navbar nav ul li a:hover {
+  color: #a50000; 
+}
+
+.navbar nav ul li a.active {
+  color: #a50000; 
+}
+
+.navbar nav ul li.home {
+  left: 450px; 
+}
+
+.navbar nav ul li.gallery {
+  left: 480px; 
+}
+
+.navbar nav ul li.blog {
+  left: 510px; 
+}
+
+.navbar nav ul li.contact {
+  left: 540px; 
+}
+
+
+.head {
+  color: #ffffff;
+  text-align: left;
+  position: fixed;
+  margin-left: 100px;
+  top: 12px;  
+  font-family: 'Work Sans', sans-serif;
+}
+
+/*HOME PAGE*/
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.home-page {
+    font-family: 'Work Sans', sans-serif; 
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    background-color: #00011f;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-page .about {
+    color: #fff;
+    text-align: left;
+    margin-top: 400px;
+    margin-left:100px;
+    position: relative;
+    top: -5%;
+    left: 0%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.abouthead {
+  color: #fff;
+  margin-top: 125px;
+  margin-left:140px;
+  position: relative;
+  font-family: 'Work Sans', sans-serif; 
+}
+
+.rounded-image {
+  border-radius: 50%; /* Membuat border bulat */
+  width: 300px; /* Sesuaikan ukuran dengan kebutuhan Anda */
+  height: 300px; /* Sesuaikan ukuran dengan kebutuhan Anda */
+  display: block;
+  margin-left: -85px; /* Posisikan gambar ke tengah */
+  margin-top: -450px; /* Sesuaikan jarak dari atas */
+  position: relative; /* Menjadikan posisi absolut agar elemen independen dari posisi elemen lain */
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 20px;
+  }
+  
+  .content, .abouthead {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/*GALLERY PAGE*/
+.gallery-page {
+  font-family: 'Work Sans', sans-serif; 
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00011f;
+}
+
+.photoshead {
+  color: #fff;
+  text-align: left;
+  margin-top: 125px;
+  margin-left: 50px;
+  font-family: 'Work Sans', sans-serif; 
+}
+
+.photos {
+  text-align: left;
+}
+
+.photos img {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: 50px;
+}
+
+/*BLOG PAGE*/
+.blog-page {
+  font-family: 'Work Sans', sans-serif; 
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00011f;
+}
+
+.bloghead {
+  color: #fff;
+  text-align: left;
+  margin-top: 125px;
+  margin-left: 50px;
+  font-family: 'Work Sans', sans-serif; 
+}
+
+.blog-content {
+  color: #fff;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-family: 'Work Sans', sans-serif; 
+}
+
+.blog-content article {
+  margin-bottom: 20px;
+}
+
+.blog-content h3 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.blog-content p {
+  color: #fff;
+}
+
+/* CONTACT PAGE */
+.contact-page {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00011f;
+}
+
+.contacthead {
+  color: #fff;
+  text-align: left;
+  margin-top: 125px;
+  margin-left: 50px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.contact-info {
+  color: #fff;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
