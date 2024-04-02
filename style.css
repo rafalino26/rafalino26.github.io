@@ -95,6 +95,15 @@ body, html {
     font-family: 'Work Sans', sans-serif;
 }
 
+.about-content {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: -35%;
+  left: 19%;
+  font-family: 'Work Sans', sans-serif;
+}
+
 .abouthead {
   color: #fff;
   margin-top: 125px;
@@ -109,7 +118,7 @@ body, html {
   height: 300px; /* Sesuaikan ukuran dengan kebutuhan Anda */
   display: block;
   margin-left: -85px; /* Posisikan gambar ke tengah */
-  margin-top: -450px; /* Sesuaikan jarak dari atas */
+  margin-top: -580px; /* Sesuaikan jarak dari atas */
   position: relative; /* Menjadikan posisi absolut agar elemen independen dari posisi elemen lain */
 }
 
