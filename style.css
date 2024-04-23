@@ -113,14 +113,20 @@ body, html {
 }
 
 .rounded-image {
-  border-radius: 50%; /* Membuat border bulat */
-  width: 300px; /* Sesuaikan ukuran dengan kebutuhan Anda */
-  height: 300px; /* Sesuaikan ukuran dengan kebutuhan Anda */
+  border-radius: 50%; 
+  width: 300px; 
+  height: 300px;
   display: block;
-  margin-left: -85px; /* Posisikan gambar ke tengah */
-  margin-top: -580px; /* Sesuaikan jarak dari atas */
-  position: relative; /* Menjadikan posisi absolut agar elemen independen dari posisi elemen lain */
+  margin-left: -85px; 
+  margin-top: -580px; 
+  position: relative; 
+  transition: transform 0.2s ease; 
 }
+
+.rounded-image:hover {
+  transform: scale(1.1); 
+}
+
 
 @media (max-width: 768px) {
   .home-page {
@@ -144,7 +150,10 @@ body, html {
   width: 100%;
   height: 100%;
   background-color: #00011f;
+  overflow-y: auto; 
+  height: 100vh; 
 }
+
 
 .photoshead {
   color: #fff;
@@ -162,8 +171,80 @@ body, html {
   width: 500px;
   height: auto;
   display: block;
-  margin-right: auto;
-  margin-left: 50px;
+}
+
+/* CSS untuk Galeri dan Modal */
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+.next,
+.prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 32px;
+  padding: 10px 20px; 
+  cursor: pointer;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border: none;
+  border-radius: 5px;
+}
+
+.next {
+  right: 60px;
+}
+
+.prev {
+  left: 60px;
+}
+
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 80%; 
+  max-height: 80vh; 
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+}
+
+.photos .gallery-image {
+  width: 300px; 
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.photos .gallery-image:hover {
+  transform: scale(1.05); 
 }
 
 /*BLOG PAGE*/
@@ -207,6 +288,8 @@ body, html {
 .blog-content p {
   color: #fff;
 }
+
+
 
 /* CONTACT PAGE */
 .contact-page {

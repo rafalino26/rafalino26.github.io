@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Gallery</title>
-    <head>
-        <meta charset="UTF-8">
-        <title>Personal Homepage</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <div class="gallery-page">
         <div class="navbar">
             <nav>
@@ -19,20 +17,34 @@
                 </ul>
             </nav>
         </div>
-<body>
-    <div class="head">
-        <h2>Personal Homepage</h2>
+
+        <div class="head">
+            <h2>Personal Homepage</h2>
+        </div>
+
+        <div class="photoshead">
+            <h3>My Photos:</h3>
+        </div>
+
+        <div class="photos">
+            <img src="image/img1.jpg" alt="Deskripsi Foto 2" class="gallery-image">
+            <img src="image/img2.jpg" alt="Deskripsi Foto 3" class="gallery-image">
+            <img src="image/img3.jpg" alt="Deskripsi Foto 4" class="gallery-image">
+            <img src="image/img4.jpg" alt="Deskripsi Foto 4" class="gallery-image">
+            <img src="image/img5.jpg" alt="Deskripsi Foto 4" class="gallery-image">
+            <img src="image/img6.jpg" alt="Deskripsi Foto 4" class="gallery-image">
+            <img src="image/img7.jpg" alt="Deskripsi Foto 4" class="gallery-image">
+            <img src="image/img8.jpg" alt="Deskripsi Foto 4" class="gallery-image">
+        </div>
+
+        <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <a class="prev" onclick="prevImage()">&#10094;</a>
+            <a class="next" onclick="nextImage()">&#10095;</a>
+        </div>
     </div>
-<div class = "photoshead">
-<h3>My photos:</h3>
-</div>
-<div class = "photos">
-    <img src="image/1222822.jpg" alt="deskripsi foto 1" width="300">
-</div>
+
+    <script src="gallery.js" defer></script>
 </body>
-</div>
 </html>
-
-
-
-
